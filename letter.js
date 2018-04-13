@@ -18,9 +18,11 @@ var Letter = function(character) {
 
  };
 
+ module.exports = Letter;
+
 //Testing and debugging
-var testLetter = new Letter ("a");
-console.log(testLetter.letterReveal());
+//var testLetter = new Letter ("a");
+//console.log(testLetter.letterReveal());
 
 
  //The Letter constructor should define:
