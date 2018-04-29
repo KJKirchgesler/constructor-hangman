@@ -1,6 +1,11 @@
+//Function creating the letter object and defining its properties
 var Letter = function(character) {
    	this.appear = false;
+
+   	//converting character to upper case
    	this.character = character.toUpperCase();
+
+   	//Function to display the correct letters and to show blanks for unguessed letters
    	this.letterReveal = function() {
      
      	if (this.character == " ") { 
