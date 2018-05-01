@@ -50,10 +50,10 @@ this.checkLetters = function(guessedLetter) {
 };
   
 //Shows the word with letters guesses and remaining blanks 
-this.wordDisplay = function() {
+this.displayWord = function() {
   var display = " ";
     this.letters.forEach(function(character) {
-      var currentLetter = character.letterReveal();
+      var currentLetter = character.revealLetter();
       display += currentLetter;
     });
     return display;

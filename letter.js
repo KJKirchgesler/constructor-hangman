@@ -6,13 +6,13 @@ var Letter = function(character) {
    	this.character = character.toUpperCase();
 
    	//Function to display the correct letters and to show blanks for unguessed letters
-   	this.letterReveal = function() {
+   	this.revealLetter = function() {
      
-     	if (this.character == " ") { 
-       	this.appear = true;
+     	if (this.character === " ") { 
+       	this.appear === true;
        	return " ";
      
-     	} if (this.appear = false) { 
+     	} if (this.appear === false) { 
        	return  " _ ";
      
      	} else { 
