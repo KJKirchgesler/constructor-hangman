@@ -18,6 +18,7 @@ var hangman = {
 
     //Initiates the game
     startGame: function() {
+      var that = this;
 
         //Empties the guessedLetters array for the next round.
         if (this.guessedLetters.length > 0) {
@@ -36,7 +37,8 @@ var hangman = {
             console.log("Welcome! Try to guess the names of some of the world's best cheeses:");
             console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 
-            //Pulls random word from game.js (randomWord)  
+            //Pulls random word from game.js (randomWord)
+            var randomWord;  
             this.wordToGuess = new Word(this.randomWord);
             this.wordToGuess.getLetters();
             console.log("this random word: " + this.randomWord);
@@ -99,7 +101,7 @@ var hangman = {
                 console.log("that.wordToGuess: " + that.wordToGuess.checkLetters(guessesMade));
 
                 //If there is no match, the player is informed.
-                if (foundLetter !== that.wordToGuess.letters) {
+                if (foundLetter === 0) {
                     console.log("Incorrect! Better luck next time.");
 
                     //updates guesses left

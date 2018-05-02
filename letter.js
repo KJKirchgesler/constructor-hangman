@@ -3,12 +3,12 @@ var Letter = function(character) {
    	this.appear = false;
 
    	//converting character to upper case
-   	this.character = character.toUpperCase();
+   	this.letter = character.toUpperCase();
 
    	//Function to display the correct letters and to show blanks for unguessed letters
    	this.revealLetter = function() {
      
-     	if (this.character === " ") { 
+     	if (this.letter === " ") { 
        	this.appear === true;
        	return " ";
      
@@ -16,7 +16,7 @@ var Letter = function(character) {
        	return  " _ ";
      
      	} else { 
-       	return this.character;
+       	return this.letter;
      	};
      	
    	};
