@@ -81,7 +81,6 @@ var hangman = {
 
             //Changes letter inputs to capital letters to match the words to guess which are all in caps.     
             var guessesMade = (character.selectLetter).toUpperCase();
-            console.log("guesses made: " + guessesMade);
 
             //Adds letter to the guessedLetters array
             var attemptedGuesses = false;
@@ -96,9 +95,7 @@ var hangman = {
             if (attemptedGuesses === false) {
                 that.guessedLetters.push(guessesMade);
 
-                var foundLetter = that.wordToGuess.checkLetters(guessesMade);
-                console.log("foundLetter: " + foundLetter);
-                console.log("that.wordToGuess: " + that.wordToGuess.checkLetters(guessesMade));
+                var foundLetter = that.wordToGuess.checkLetters(guessesMade);               
 
                 //If there is no match, the player is informed.
                 if (foundLetter === 0) {
