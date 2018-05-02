@@ -41,7 +41,6 @@ var hangman = {
             var randomWord;  
             this.wordToGuess = new Word(this.randomWord);
             this.wordToGuess.getLetters();
-            console.log("this random word: " + this.randomWord);
 
             //Displays current word as blanks.
             console.log(this.wordToGuess.displayWord());
